@@ -49,7 +49,7 @@ const CreateFood = () => {
     formData.append("video", videoFile);
 
     try {
-      await axios.post("http://localhost:3000/api/food", formData, {
+      await axios.post("https://food-website-pomato-server.vercel.app/api/food", formData, {
         withCredentials: true,
       });
       navigate("/");

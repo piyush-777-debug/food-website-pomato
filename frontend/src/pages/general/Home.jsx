@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/food", { withCredentials: true })
+      .get("https://food-website-pomato-server.vercel.app/api/food", { withCredentials: true })
       .then((response) => {
         const data = response.data.foodItem;
         setVideos(Array.isArray(data) ? data : [data]);

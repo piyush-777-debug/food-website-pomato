@@ -13,7 +13,7 @@ const UserLogin = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const response = await axios.post('http://localhost:3000/api/auth/user/login', {
+    const response = await axios.post('https://food-website-pomato-server.vercel.app/api/auth/user/login', {
       email,
       password
     },{
