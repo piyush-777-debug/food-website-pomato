@@ -6,6 +6,14 @@ const imagekit = require("./src/services/storage.service.js");
 
 connectDB();
 
+app.get("/",(req,res)=>{
+    res.send({
+        activeStatus:true,
+        message:"Server is running",
+        error:false
+    })
+})
+
 app.listen(3000,()=>{
     console.log("Running");
 })
