@@ -7,7 +7,7 @@ const foodPartnerRoutes = require('../src/routes/food-partner.routes')
 const cors = require('cors')
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://food-website-pomato-client.vercel.app",
     credentials: true,
 }));
 app.use(cookieParser());
