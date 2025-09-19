@@ -52,7 +52,7 @@ const CreateFood = () => {
       await axios.post("https://food-website-pomato-server.vercel.app/api/food", formData, {
         withCredentials: true,
       });
-      navigate("/");
+      navigate("/home");
     } catch (err) {
       console.error(err);
     }
